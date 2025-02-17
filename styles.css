@@ -340,6 +340,12 @@ body {
     transform: scale(1.05);
 }
 
+@scope (.honor-title) to (.honor-image) {
+    p {
+        color: black;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     #main-content {
@@ -372,13 +378,17 @@ body {
         width: 100%;
     }
 
-    img, video {
-        width: 50% !important;
-        height: 50% !important;
+    main img, video {
+        width: 30% !important;
+        height: 30% !important;
+    }
+
+    #site-header {
+        padding: 30px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     #main-content {
         width: 90%;
     }
@@ -401,9 +411,13 @@ body {
         width: 100%;
     }
 
-    img, video {
-        width: 50% !important;
-        height: 50% !important;
+    main img, video {
+        width: 30% !important;
+        height: 30% !important;
+    }
+
+    #site-header {
+        padding: 30px;
     }
 }
 
@@ -479,10 +493,11 @@ body {
 }
 
 /* =================== FOOTER =================== */
+
 #site-footer {
     text-align: center;
     padding: 20px;
-    background: #222;
+    background: #999;
     color: #fff;
 }
 
