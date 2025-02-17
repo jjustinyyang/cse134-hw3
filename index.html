@@ -12,21 +12,20 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="education.html">Education</a>
-            <a href="experience.html">Experience</a>
-            <a href="honors.html">Honors/Awards</a>
-            <a href="hobbies.html">Hobbies/Interests</a>
-            <a href="experiment.html">Experiment Page</a>
+    <header id="site-header">
+        <nav id="main-nav" class="navigation">
+            <a href="index.html" class="nav-link">About Me</a>
+            <a href="education.html" class="nav-link">Education</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="honors.html" class="nav-link">Honors/Awards</a>
+            <a href="hobbies.html" class="nav-link">Hobbies/Interests</a>
         </nav>
     </header>
     <hr>
-    <main>
-        <section class="profile-section">
+    <main id="main-content">
+        <section id="profile" class="profile-section">
             <div class="profile-container">
-                <img src="media/self_pic1.jpg" alt="Photo" class="self-pic">
+                <img src="media/self_pic1.jpg" alt="Justin's Photo" class="profile-picture">
                 <aside class="about-me">
                     <h2>About Me</h2>
                     <code>Hello, World!</code>
@@ -46,35 +45,33 @@
                 </aside>
             </div>
         </section>
-        <div class="photo-grid">
-            <img src="media/self_pic2.jpg" alt="Photo" class="self-pic">
-            <img src="media/self_pic3.jpg" alt="Photo" class="self-pic">
-        </div>
+        <section id="gallery" class="photo-grid">
+            <img src="media/self_pic2.jpg" alt="Justin's Photo 2" class="gallery-image">
+            <img src="media/self_pic3.jpg" alt="Justin's Photo 3" class="gallery-image">
+        </section>
     </main>
     <hr>
-    <footer>
-        <table>
-            <caption>
-                Contact info:
-            </caption>
+    <footer id="site-footer">
+        <table id="contact-info" class="contact-table">
+            <caption>Contact info:</caption>
             <colgroup>
                 <col span="6">
             </colgroup>
             <tbody>
                 <tr>
-                    <th><img src="media/gmail.png" alt="Photo" height="15"></th>
+                    <th><img src="media/gmail.png" alt="Email Icon" height="15"></th>
                     <td>Email</td>
-                    <th><img src="media/linkedin.png" alt="Photo" height="15"></th>
+                    <th><img src="media/linkedin.png" alt="LinkedIn Icon" height="15"></th>
                     <td>LinkedIn</td>
-                    <th><img src="media/github.svg" alt="Photo" height="15"></th>
+                    <th><img src="media/github.svg" alt="GitHub Icon" height="15"></th>
                     <td>GitHub</td>
                 </tr>
             </tbody>
         </table>
-        <address>
+        <address id="location-info">
             <p>San Diego, CA</p>
         </address>
-        <a href="docs/justin_yang_resume.pdf" target="_blank">Resume</a>
+        <a href="docs/justin_yang_resume.pdf" target="_blank" id="resume-link">Resume</a>
     </footer>
 </body>
 
