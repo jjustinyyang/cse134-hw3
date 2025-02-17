@@ -9,7 +9,6 @@
     <meta name="keywords" content="Justin Yang, personal website, portfolio, resume, internship, recruiter, job">
     <title>Justin's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style></style>
 </head>
 
 <body>
@@ -25,37 +24,31 @@
     </header>
     <hr>
     <main>
-        <h1>Justin Yang</h1>
-        <audio id="name_audio" src="media/my_name.m4a"></audio>
-        <script>
-        </script>
-        <img src="media/speaker.png" alt="speaker" height="50">
-        <div>
-            <img src="media/self_pic1.jpg" alt="Photo" height="500">
-        </div>
-        <aside>
-            <section>
-                <h2>About Me</h2>
-                <code>Hello, World!</code>
-                <pre>I'm Justin!</pre>
-                <p>
-                    I’m a junior at UC San Diego studying computer science, originally from San Diego, CA. I’ve always
-                    been passionate about software development, especially backend systems, AI applications, and
-                    embedded systems. I love the challenge of building scalable and efficient solutions. I’m currently
-                    seeking internships for summer 2025 to further develop my skills and gain hands-on experience in the
-                    tech industry.
-                </p>
-                <br>
-                <p>
-                    On my free time, I enjoy hiking and traveling—whether it's exploring national parks or discovering
-                    new cities. I’m also a big basketball fan, both playing and watching games whenever I get the
-                    chance.
-                </p>
-            </section>
-        </aside>
-        <div>
-            <img src="media/self_pic2.jpg" alt="Photo" height="500">
-            <img src="media/self_pic3.jpg" alt="Photo" height="500">
+        <section class="profile-section">
+            <div class="profile-container">
+                <img src="media/self_pic1.jpg" alt="Photo" class="self-pic">
+                <aside class="about-me">
+                    <h2>About Me</h2>
+                    <code>Hello, World!</code>
+                    <pre>I'm Justin!</pre>
+                    <p>
+                        I’m a junior at UC San Diego studying computer science, originally from San Diego, CA. I’ve always
+                        been passionate about software development, especially backend systems, AI applications, and
+                        embedded systems. I love the challenge of building scalable and efficient solutions. I’m currently
+                        seeking internships for summer 2025 to further develop my skills and gain hands-on experience in the
+                        tech industry.
+                    </p>
+                    <p>
+                        On my free time, I enjoy hiking and traveling—whether it's exploring national parks or discovering
+                        new cities. I’m also a big basketball fan, both playing and watching games whenever I get the
+                        chance.
+                    </p>
+                </aside>
+            </div>
+        </section>
+        <div class="photo-grid">
+            <img src="media/self_pic2.jpg" alt="Photo" class="self-pic">
+            <img src="media/self_pic3.jpg" alt="Photo" class="self-pic">
         </div>
     </main>
     <hr>
@@ -79,7 +72,7 @@
             </tbody>
         </table>
         <address>
-            <p>San Dieog, CA</p>
+            <p>San Diego, CA</p>
         </address>
         <a href="docs/justin_yang_resume.pdf" target="_blank">Resume</a>
     </footer>
