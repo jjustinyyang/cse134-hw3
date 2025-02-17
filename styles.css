@@ -57,6 +57,7 @@ body {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Profile Picture */
@@ -66,11 +67,6 @@ body {
     height: auto;
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* About Me */
-.about-me {
-    width: 55%;
 }
 
 .about-me h2 {
@@ -232,7 +228,7 @@ body {
     min-height: 100px;
     display: flex;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
 
 /* Link Row */
@@ -379,6 +375,7 @@ body {
     margin: 10px;
     border: 2px solid #ccc;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    object-fit: cover;
 }
 
 .hobby-image:hover,
