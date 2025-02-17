@@ -44,8 +44,21 @@ body {
     border-radius: 5px;
 }
 
-/* =================== Profile SECTION =================== */
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* =================== Profile SECTION =================== */
 .profile-container {
     display: flex;
     align-items: center;
@@ -101,7 +114,6 @@ body {
 }
 
 /* =================== EDUCATION SECTION =================== */
-
 #education-title {
     text-transform: uppercase;
     font-size: 24px;
@@ -174,7 +186,6 @@ body {
 }
 
 /* =================== EXPERIENCE SECTION =================== */
-
 #experience-title {
     text-transform: uppercase;
     font-size: 24px;
@@ -208,8 +219,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-direction: row;
-    /* Ensure all logos are on the left and descriptions on the right */
+    flex-direction: row; /* Ensure all logos are on the left and descriptions on the right */
 }
 
 /* Image Styling */
@@ -222,13 +232,14 @@ body {
 
 /* Description Styling */
 .experience-text {
+    width: 65%;
     background: #e0e0e0;
     padding: 15px;
     border-radius: 10px;
     min-height: 100px;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 /* Link Row */
@@ -251,7 +262,6 @@ body {
 }
 
 /* =================== HONORS SECTION =================== */
-
 /* General Page Layout */
 #honors-content {
     max-width: 800px;
@@ -313,27 +323,71 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    #honors-content {
+@media (max-width: 600px) {
+    #main-content {
         width: 90%;
-        padding: 15px;
     }
 
-    .honor-entry {
-        padding: 15px;
+    .navigation {
+        display: none;
     }
 
-    .page-title {
-        font-size: 24px;
+    .hamburger-menu {
+        display: flex;
     }
 
-    .honor-title {
-        font-size: 20px;
+    .profile-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo-grid img {
+        width: 100%;
+    }
+
+    .experience-content {
+        flex-direction: column;
+    }
+
+    .company-logo {
+        width: 100%;
+        max-width: none;
+    }
+
+    .experience-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    #main-content {
+        width: 90%;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo-grid img {
+        width: 100%;
+    }
+
+    .experience-content {
+        flex-direction: column;
+    }
+
+    .company-logo {
+        width: 100%;
+        max-width: none;
+    }
+
+    .experience-text {
+        width: 100%;
     }
 }
 
 /* =================== HOBBIES SECTION =================== */
-
 /* Hobbies Page Specific Styles */
 #hobbies-content {
     width: 80%;
@@ -405,7 +459,6 @@ body {
 }
 
 /* =================== FOOTER =================== */
-
 #site-footer {
     text-align: center;
     padding: 20px;
