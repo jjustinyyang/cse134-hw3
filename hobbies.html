@@ -10,78 +10,78 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="body">
+<body id="hobbies-page">
     <header id="site-header">
         <nav id="main-nav" class="navigation">
             <a href="index.html" class="nav-link">About Me</a>
             <a href="education.html" class="nav-link">Education</a>
             <a href="experience.html" class="nav-link">Experience</a>
             <a href="honors.html" class="nav-link">Honors/Awards</a>
-            <a href="hobbies.html" class="nav-link">Hobbies/Interests</a>
+            <a href="hobbies.html" class="nav-link active">Hobbies/Interests</a>
         </nav>
     </header>
-    <main class="main">
-        <h1 class="title">Hobbies/Interests</h1>
 
-        <section class="section">
-            <h2 class="subtitle">Hiking</h2>
-            <img src="media/hike.jpg" alt="Photo" class="image">
-            <video controls class="video">
+    <main id="hobbies-content">
+        <h1 class="hobbies-title">Hobbies & Interests</h1>
+
+        <section class="hobby-entry" id="hobby-hiking">
+            <h2 class="hobby-title">Hiking</h2>
+            <img src="media/hike.jpg" alt="Hiking photo" class="hobby-image">
+            <video controls class="hobby-video">
                 <source src="media/hike.mp4" type="video/mp4">
             </video>
-            <div class="text">
+            <div class="hobby-text">
                 <p>Hiking gives me a chance to disconnect from daily life and immerse myself in nature...</p>
-                <h3>You know a spot?</h3>
-                <form class="form">
+                <h3 class="hobby-subheading">You know a spot?</h3>
+                <form class="hobby-form">
                     <label for="favorite-trail">What is your favorite trail?</label>
-                    <input type="text" id="favorite-trail" name="favorite-trail" class="input" required>
+                    <input type="text" id="favorite-trail" name="favorite-trail" class="hobby-input" required>
                     <br><br>
-                    <input type="submit" value="Submit" class="button">
+                    <input type="submit" value="Submit" class="hobby-button">
                 </form>
             </div>
         </section>
 
-        <section class="section">
-            <h2 class="subtitle">Traveling</h2>
-            <img src="media/travel1.jpg" alt="Photo" class="image">
-            <img src="media/travel2.jpg" alt="Photo" class="image">
-            <div class="text">
+        <section class="hobby-entry" id="hobby-travel">
+            <h2 class="hobby-title">Traveling</h2>
+            <img src="media/travel1.jpg" alt="Travel photo" class="hobby-image">
+            <img src="media/travel2.jpg" alt="Travel photo" class="hobby-image">
+            <div class="hobby-text">
                 <p>I love traveling and experiencing new places, cultures, and foods...</p>
-                <h3>You decide my next trip!</h3>
-                <form class="form">
+                <h3 class="hobby-subheading">You decide my next trip!</h3>
+                <form class="hobby-form">
                     <label for="next-destination">Where should I visit next?</label>
-                    <input type="text" id="next-destination" name="next-destination" class="input" required>
+                    <input type="text" id="next-destination" name="next-destination" class="hobby-input" required>
                     <br><br>
-                    <input type="submit" value="Submit" class="button">
+                    <input type="submit" value="Submit" class="hobby-button">
                 </form>
             </div>
-
         </section>
 
-        <section class="section">
-            <h2 class="subtitle">Basketball</h2>
-            <img src="media/basketball1.jpeg" alt="Photo" class="image">
-            <img src="media/basketball2.jpeg" alt="Photo" class="image">
-            <div class="text">
+        <section class="hobby-entry" id="hobby-basketball">
+            <h2 class="hobby-title">Basketball</h2>
+            <img src="media/basketball1.jpeg" alt="Basketball photo" class="hobby-image">
+            <img src="media/basketball2.jpeg" alt="Basketball photo" class="hobby-image">
+            <div class="hobby-text">
                 <p>Basketball has always been a passion of mine...</p>
-                <h3>Let's talk basketball!</h3>
-                <form class="form">
-                    <label for="favorite-nba">What is your favorite NBA team / player?</label>
-                    <input type="text" id="favorite-nba" name="favorite-nba" class="input" required>
+                <h3 class="hobby-subheading">Let's talk basketball!</h3>
+                <form class="hobby-form">
+                    <label for="favorite-nba">What is your favorite NBA team/player?</label>
+                    <input type="text" id="favorite-nba" name="favorite-nba" class="hobby-input" required>
                     <br><br>
-                    <input type="submit" value="Submit" class="button">
+                    <input type="submit" value="Submit" class="hobby-button">
                 </form>
             </div>
         </section>
 
         <hr>
 
-        <section class="leaveSomething">
-            <h2 class="message">Leave something!</h2>
-            <form class="form">
+        <section id="hobby-feedback">
+            <h2 class="hobby-message">Leave Something!</h2>
+            <form class="hobby-form">
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" class="input">
-                <fieldset class="input">
+                <input type="text" id="name" name="name" class="hobby-input">
+                <fieldset class="hobby-gender">
                     <legend>Gender:</legend>
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label>
@@ -89,7 +89,7 @@
                     <label for="female">Female</label>
                 </fieldset>
                 <p>What are your hobbies?</p>
-                <select id="hobbies" name="hobbies" class="select">
+                <select id="hobbies" name="hobbies" class="hobby-select">
                     <optgroup label="Outdoor">
                         <option value="hiking">Hiking</option>
                         <option value="biking">Biking</option>
@@ -105,21 +105,20 @@
                         <option value="other">Other</option>
                     </optgroup>
                 </select>
-                <textarea id="message" name="message" class="textarea" rows="4" cols="50">Tell me more...</textarea>
+                <textarea id="message" name="message" class="hobby-textarea" rows="4"
+                    cols="50">Tell me more...</textarea>
                 <details>
                     <summary>More info</summary>
-                    <p>Your response is anonymous, connect with me with contact info below!</p>
+                    <p>Your response is anonymous. Connect with me using the contact info below!</p>
                 </details>
-                <button type="button" class="button">Submit</button>
+                <button type="button" class="hobby-button">Submit</button>
             </form>
         </section>
     </main>
+
     <footer id="site-footer">
         <table id="contact-info" class="contact-table">
             <caption>Contact info:</caption>
-            <colgroup>
-                <col span="6">
-            </colgroup>
             <tbody>
                 <tr>
                     <th><img src="media/gmail.png" alt="Email Icon" height="15"></th>
