@@ -210,7 +210,8 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-direction: row; /* Ensure all logos are on the left and descriptions on the right */
+    flex-direction: row;
+    /* Ensure all logos are on the left and descriptions on the right */
 }
 
 /* Image Styling */
@@ -251,6 +252,87 @@ body {
     background: #ddd;
 }
 
+/* =================== HONORS SECTION =================== */
+/* General Page Layout */
+#honors-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Honor Entry Styles */
+.honor-entry {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.honor-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.honor-year {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.honor-description {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Image Styles */
+.honor-image {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.honor-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #honors-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .honor-entry {
+        padding: 15px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .honor-title {
+        font-size: 20px;
+    }
+}
+
 /* =================== HOBBIES SECTION =================== */
 
 .main {
@@ -288,8 +370,8 @@ body {
 }
 
 .image {
-    width: 45%;
-    height:35rem;
+    height: 68dvh;
+    width: 35dvw;
     margin: 10px;
     border: 2px solid #ccc;
     object-fit: cover;
@@ -314,11 +396,53 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.input, .textarea, .select {
+.input,
+.textarea,
+.select {
     width: 50%;
     padding: 10px;
     margin-top: 5px;
 }
+
+.button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #4aabff;
+    color: black;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 /* =================== FOOTER =================== */
 #site-footer {
