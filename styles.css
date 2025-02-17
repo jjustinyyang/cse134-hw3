@@ -1,10 +1,21 @@
+/* =================== CSS VARIABLES =================== */
+:root {
+    --primary-color: #005a8d;
+    --secondary-color: #4aabff;
+    --background-color: #f8f8f8;
+    --text-color: #333;
+    --font-family: 'Roboto', Arial, sans-serif;
+    --highlight-color: color(display-p3 0.7 0.7 0.7);
+    --mix-color: color-mix(in srgb, var(--primary-color) 50%, var(--secondary-color) 50%);
+}
+
 /* =================== GENERAL STYLING =================== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family), Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: var(--background-color, #f8f8f8);
+    color: var(--text-color, #333);
 }
 
 .center-text {
@@ -20,7 +31,7 @@ body {
 
 /* =================== HEADER & NAVIGATION =================== */
 #site-header {
-    background-color: #005a8d;
+    background-color: var(--primary-color, #005a8d);
     padding: 15px 0;
     text-align: center;
 }
@@ -49,6 +60,9 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .hamburger-menu div {
@@ -58,7 +72,7 @@ body {
     margin: 4px 0;
 }
 
-/* =================== Profile SECTION =================== */
+/* Profile Section */
 .profile-container {
     display: flex;
     align-items: center;
@@ -71,6 +85,10 @@ body {
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+.profile-container:has(h2) {
+    border: 2px solid var(--mix-color);
 }
 
 /* Profile Picture */
@@ -138,31 +156,29 @@ body {
 }
 
 .education-details h2 {
-    color: #005a8d;
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
 /* Course List */
 .course-list {
     margin-top: 20px;
-}
-
-.course-list ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 0;
-    list-style: none;
-}
-
-.course-list li {
-    background: #e0e0e0;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    min-width: 180px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        background: var(--highlight-color);
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: bold;
+        min-width: 180px;
+    }
 }
 
 /* Education Images */
@@ -341,10 +357,6 @@ body {
         gap: 20px;
     }
 
-    .photo-grid img {
-        width: 100%;
-    }
-
     .experience-content {
         flex-direction: column;
     }
@@ -356,6 +368,11 @@ body {
 
     .experience-text {
         width: 100%;
+    }
+
+    img, video {
+        width: 50% !important;
+        height: 50% !important;
     }
 }
 
@@ -369,10 +386,6 @@ body {
         gap: 20px;
     }
 
-    .photo-grid img {
-        width: 100%;
-    }
-
     .experience-content {
         flex-direction: column;
     }
@@ -384,6 +397,11 @@ body {
 
     .experience-text {
         width: 100%;
+    }
+
+    img, video {
+        width: 50% !important;
+        height: 50% !important;
     }
 }
 
@@ -455,7 +473,7 @@ body {
 }
 
 .hobby-button:hover {
-    background-color: #4aabff;
+    background-color: var(--secondary-color, #4aabff);
 }
 
 /* =================== FOOTER =================== */
